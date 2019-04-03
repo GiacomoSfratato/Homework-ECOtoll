@@ -9,7 +9,7 @@ private String classeAmbientale;
 private int anno;
 private int assi;
 private int peso;
-private int altezza = 0;
+private int altezza;
 
 public Veicolo(String modello, String marca, String targa, String classeAmbientale, int anno, int assi, int peso,
 		int altezza) {
