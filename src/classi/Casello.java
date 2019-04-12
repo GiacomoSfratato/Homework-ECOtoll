@@ -26,8 +26,4 @@ private int chilometro;
 		this.chilometro = chilometro;
 	}
 
-	public String getAutostrada() {
-		return autostrada;
-	}
-
 }

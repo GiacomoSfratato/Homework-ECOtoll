@@ -26,56 +26,50 @@ public class Autostrada {
 		Autostrada.iva = iva/100;
 	}
 
-	public int Pedaggio(Veicolo v, int arrotondamento, Percorso p) {
-		
-	}
+	public int Pedaggio(Veicolo v, int arrotondamento, Percorso p) {return 0;}
 	
-	public int getIva() {
-		return iva;
-	}
-	
-	public void setIva(int i) {
-		iva = i;
-	}
-	
-	public int getTuA() {
-		return tuA;
+
+	public boolean addCasello(Casello c) {return false;
 	}
 
-	public void setTuA(int tuA) {
-		this.tuA = tuA;
+	public int getTarUnA() {
+		return tarUnA;
 	}
 
-	public int getTuB() {
-		return tuB;
+	public void setTarUnA(int tarUnA) {
+		this.tarUnA = tarUnA;
 	}
 
-	public void setTuB(int tuB) {
-		this.tuB = tuB;
+	public int getTarUnB() {
+		return tarUnB;
 	}
 
-	public int getTu3() {
-		return tu3;
+	public void setTarUnB(int tarUnB) {
+		this.tarUnB = tarUnB;
 	}
 
-	public void setTu3(int tu3) {
-		this.tu3 = tu3;
+	public int getTarUn3() {
+		return tarUn3;
 	}
 
-	public int getTu4() {
-		return tu4;
+	public void setTarUn3(int tarUn3) {
+		this.tarUn3 = tarUn3;
 	}
 
-	public void setTu4(int tu4) {
-		this.tu4 = tu4;
+	public int getTarUn4() {
+		return tarUn4;
 	}
 
-	public int getTu5() {
-		return tu5;
+	public void setTarUn4(int tarUn4) {
+		this.tarUn4 = tarUn4;
 	}
 
-	public void setTu5(int tu5) {
-		this.tu5 = tu5;
+	public int getTarUn5() {
+		return tarUn5;
+	}
+
+	public void setTarUn5(int tarUn5) {
+		this.tarUn5 = tarUn5;
 	}
 
 	public ArrayList<Casello> getCaselli() {
@@ -85,8 +79,13 @@ public class Autostrada {
 	public void setCaselli(ArrayList<Casello> caselli) {
 		this.caselli = caselli;
 	}
-	
-	public boolean addCasello(Casello c) {
+
+	public static double getIva() {
+		return iva;
+	}
+
+	public static void setIva(double iva) {
+		Autostrada.iva = iva;
 	}
 
 }
