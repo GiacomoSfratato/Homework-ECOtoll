@@ -5,17 +5,29 @@ import java.util.*;
 public class Autostrada {
 	private int tarUnA, tarUnB, tarUn3, tarUn4, tarUn5;
 	private ArrayList<Casello> caselli;
-	private static int iva;
+	private static double iva = 0.22;
 
 	public Autostrada(int tuA, int tuB, int tu3, int tu4, int tu5, ArrayList<Casello> caselli) {
-		
+		this.tarUnA = tuA;
+		this.tarUnB = tuB;
+		this.tarUn3 = tu3;
+		this.tarUn4 = tu4;
+		this.tarUn5 = tu5;
+		this.caselli = caselli;
 	}
 	
-	public Autostrada(int iva, int tuA, int tuB, int tu3, int tu4, int tu5, ArrayList<Casello> caselli) {
-		
+	public Autostrada(double iva, int tuA, int tuB, int tu3, int tu4, int tu5, ArrayList<Casello> caselli) {
+		this.tarUnA = tuA;
+		this.tarUnB = tuB;
+		this.tarUn3 = tu3;
+		this.tarUn4 = tu4;
+		this.tarUn5 = tu5;
+		this.caselli = caselli;
+		Autostrada.iva = iva/100;
 	}
 
 	public int Pedaggio(Veicolo v, int arrotondamento, Percorso p) {
+		
 	}
 	
 	public int getIva() {

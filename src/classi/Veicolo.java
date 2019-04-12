@@ -1,28 +1,24 @@
 package classi;
 
-public class Veicolo {
-private String modello;
-private String marca;
-private String targa;
-private char classeVeicolo;
-private String classeAmbientale;
-private int anno;
-private int assi;
-private int peso;
-private int altezza;
-
-public Veicolo(String modello, String marca, String targa, String classeAmbientale, int anno, int assi, int peso,
-		int altezza) {
-	//si definisce la classe di appartenenza del Veicolo in base all'altezza e al numero di assi, usando il metodo setClasseVeicolo;
-		}
-
-	public void setClasseVeicolo(int assi, int altezza) {
+public abstract class Veicolo {
+	//variabili
+	protected String modello, marca, targa, classeAmbientale;
+	protected int anno, assi;
+	protected double peso, altezza;
+	
+	//costruttore
+	public Veicolo(String modello, String marca, String targa, String classeAmbientale, int anno, int assi, double peso, double altezza) {
+	this.modello = modello;
+	this.marca = marca;
+	this.targa = targa;
+	this.classeAmbientale = classeAmbientale;
+	this.assi = assi;
+	this.anno = anno;
+	this.peso = peso;
+	this.altezza = altezza;
 	}
-
-	public char getClasseVeicolo() {
-		return this.classeVeicolo;
-	}
-
+	
+	//metodi get() e set()
 	public String getModello() {
 		return modello;
 	}
@@ -71,23 +67,21 @@ public Veicolo(String modello, String marca, String targa, String classeAmbienta
 		this.assi = assi;
 	}
 
-	public int getPeso() {
+	public double getPeso() {
 		return peso;
 	}
 
-	public void setPeso(int peso) {
+	public void setPeso(double peso) {
 		this.peso = peso;
 	}
 
-	public int getAltezza() {
+	public double getAltezza() {
 		return altezza;
 	}
 
-	public void setAltezza(int altezza) {
+	public void setAltezza(double altezza) {
 		this.altezza = altezza;
 	}
-
-
 
 }
 

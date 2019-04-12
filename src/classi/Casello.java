@@ -3,10 +3,11 @@ package classi;
 public class Casello {
 private String nome;
 private int chilometro;
-private String autostrada;
 
-	public Casello(String nome, int chilometro, String autostrada) {
-		
+	public Casello(String nome, int chilometro, Autostrada a) {
+		this.nome = nome;
+		this.chilometro = chilometro;
+		a.addCasello(this);
 	}
 
 	public String getNome() {
@@ -27,10 +28,6 @@ private String autostrada;
 
 	public String getAutostrada() {
 		return autostrada;
-	}
-
-	public void setAutostrada(String autostrada) {
-		this.autostrada = autostrada;
 	}
 
 }
