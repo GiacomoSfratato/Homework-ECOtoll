@@ -1,4 +1,4 @@
-# Homework-ECOtoll
+# Homework-ECOtoll 
 Si vuole progettare un insieme di classi Java che consentano la **gestione dei pedaggi presso
 caselli autostradali.**
 La formula per il calcolo del pedaggio può essere riprodotta simulando (in maniera semplificata) un
@@ -11,3 +11,4 @@ Poi, si applica l'arrotondamento, per eccesso o per difetto, ai 10 centesimi di 
 Si vuole progettare un sistema di classi e interfacce Java che gestiscono tale sistema e che
 **calcolino il pedaggio in base a veicolo e percorso.** Si deve far uso di ereditarietà, interfacce,
 costruttori e uso opportuno di membri delle classi.
+### Giacomo Sfratato, matricola 247318, giacomo.sfratato@student.univaq.it
