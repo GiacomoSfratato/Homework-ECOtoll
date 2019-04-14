@@ -7,7 +7,7 @@ private int chilometro;
 	public Casello(String nome, int chilometro, Autostrada a) {
 		this.nome = nome;
 		this.chilometro = chilometro;
-		a.addCasello(this);
+		a.aggiungiCasello(this);
 	}
 
 	public String getNome() {

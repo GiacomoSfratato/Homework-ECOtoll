@@ -5,8 +5,11 @@ private Casello inizio;
 private Casello fine;
 private int lunghezza;
 	public Percorso(Casello inizio, Casello fine) {
-		// TODO Auto-generated constructor stub
+		this.inizio = inizio;
+		this.fine = fine;
+		this.lunghezza = Math.abs(this.inizio.getChilometro() - this.fine.getChilometro()); //lunghezza è il valore assoluto della differenza fra i chilometri dei caselli
 	}
+	
 	public Casello getInizio() {
 		return inizio;
 	}
