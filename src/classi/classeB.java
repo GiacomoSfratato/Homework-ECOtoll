@@ -2,6 +2,7 @@ package classi;
 
 public class classeB extends Veicolo{
 
+	//costruttore
 	public classeB(String modello, String marca, String targa, String classeAmbientale, int anno, int assi, double peso, double altezza) throws Exception{
 		super(modello, marca, targa, classeAmbientale, anno, assi, peso, altezza);
 		if(this.assi != 2) {

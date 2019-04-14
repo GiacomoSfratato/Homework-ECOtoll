@@ -1,10 +1,11 @@
 package classi;
 
-public class Casello {
+public class Casello implements Comparable<Casello>{
 private String nome;
-private int chilometro;
+private double chilometro;
 
-	public Casello(String nome, int chilometro, Autostrada a) {
+	//costruttore
+	public Casello(String nome, double chilometro, Autostrada a) {
 		this.nome = nome;
 		this.chilometro = chilometro;
 		a.aggiungiCasello(this);
@@ -18,12 +19,23 @@ private int chilometro;
 		this.nome = nome;
 	}
 
-	public int getChilometro() {
+	public double getChilometro() {
 		return chilometro;
 	}
 
-	public void setChilometro(int chilometro) {
+	public void setChilometro(double chilometro) {
 		this.chilometro = chilometro;
+	}
+	
+	@Override
+	public boolean equals(Object o) {		
+	}
+	
+	@Override
+	public String toString() {	
+	}
+	
+	public int compareTo(Casello c) {	
 	}
 
 }

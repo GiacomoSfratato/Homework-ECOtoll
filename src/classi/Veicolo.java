@@ -1,6 +1,6 @@
 package classi;
 
-public abstract class Veicolo {
+public abstract class Veicolo implements Comparable<Veicolo>{
 	//variabili
 	protected String modello, marca, targa, classeAmbientale;
 	protected int anno, assi;
@@ -81,6 +81,17 @@ public abstract class Veicolo {
 
 	public void setAltezza(double altezza) {
 		this.altezza = altezza;
+	}
+	
+	@Override
+	public boolean equals(Object o) {		
+	}
+	
+	@Override
+	public String toString() {	
+	}
+	
+	public int compareTo(Veicolo v) {	
 	}
 
 }
